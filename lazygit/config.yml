@@ -1,0 +1,7 @@
+gui:
+  border: rounded
+  language: 'en'
+  showIcons: true
+os:
+  editPreset: nvim
+
