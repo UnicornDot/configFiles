@@ -3,7 +3,7 @@ theme = "boo_berry"
 
 [keys.normal]
 "C-s" = ":write"
-"C-o" = ":open ~/.config/helix/config.toml"
+F1 = ":config-open"
 g = { a = "code_action" }
 "C-/" = "toggle_comments"
 "C-r" = ":reload"
