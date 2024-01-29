@@ -1,9 +1,8 @@
-
-theme = "boo_berry"
+theme = "noctis"
 
 [keys.normal]
 "C-s" = ":write"
-F1 = ":config-open"
+"F1" = ":config-open"
 g = { a = "code_action" }
 "C-/" = "toggle_comments"
 "C-r" = ":reload"
