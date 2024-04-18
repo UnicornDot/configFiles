@@ -1,0 +1,8 @@
+" Source your .vimrc
+source ~/software/config/idea/option.vim
+
+" auto switch IM
+set keep-english-in-normal
+
+" surround 插件
+set surround
