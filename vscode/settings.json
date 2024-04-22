@@ -3,30 +3,45 @@
   "workbench.layoutControl.type": "both",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.showTabs": "multiple",
+  "workbench.list.smoothScrolling": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "1984 - Cyberpunk",
+  "workbench.activityBar.location": "top",
+  "window.customTitleBarVisibility": "windowed",
+  "window.titleBarStyle": "custom",
   "window.titleSeparator": " ⚡ ",
   "window.commandCenter": true,
+  "window.zoomLevel": 1,
   "editor.snippetSuggestions": "bottom",
   "editor.inlineSuggest.enabled": true,
-  "editor.suggestSelection": "first",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "editor.cursorBlinking": "solid",
   "editor.fontFamily": "'MonoLisa Nerd Font','SF Mono', 'FiraCode Nerd Font', Hack, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.formatOnSave": true,
+  "editor.smoothScrolling": true,
+  "editor.accessibilitySupport": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoGuessEncoding": true,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.profiles.windows": {
     "powershell_profile": {
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "args": [
-        "-NoLogo"
-      ]
+      "args": ["-NoLogo"]
     }
   },
   "terminal.integrated.defaultProfile.windows": "powershell_profile",
   "vscode-neovim.neovimExecutablePaths.win32": "D:/Scoop/apps/neovim-nightly/current/bin/nvim.exe",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.win32": "$HOME/software/config/vscode/init.vim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/vscode/init.vim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/software/config/vscode/init.vim",
   "whichkey.sortOrder": "alphabetically",
   "whichkey.delay": 0,
   "whichkey.bindings": [
@@ -1026,9 +1041,7 @@
           }
         },
         {
-          "scope": [
-            "punctuation.definition.tag.jsx"
-          ],
+          "scope": ["punctuation.definition.tag.jsx"],
           "settings": {
             "foreground": "#5c6370"
           }
@@ -1045,9 +1058,7 @@
           }
         },
         {
-          "scope": [
-            "entity.other.attribute-name.jsx"
-          ],
+          "scope": ["entity.other.attribute-name.jsx"],
           "settings": {
             "foreground": "#e5c07b"
           }
@@ -1067,9 +1078,7 @@
           }
         },
         {
-          "scope": [
-            "variable.other.constant.object.js"
-          ],
+          "scope": ["variable.other.constant.object.js"],
           "settings": {
             "foreground": "#e06c75"
           }
@@ -1114,17 +1123,18 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "editor.accessibilitySupport": "off",
-  "window.titleBarStyle": "custom",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "window.zoomLevel": 1,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "vscode-icons",
-  "vscode_vibrancy.opacity": 0.7,
-  "workbench.colorTheme": "1984 - Cyberpunk"
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
+  ],
+  "zenMode.centerLayout": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": false,
 }
