@@ -5,7 +5,7 @@
     "command": "actions.findWithSelection"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+e",   
     "command": "-actions.findWithSelection"
   },
   {
@@ -125,12 +125,6 @@
     "key": "ctrl+shift+t",
     "command": "workbench.action.terminal.focus",
     "when": "!terminalFocus"
-  },
-  {
-    "command": "vscode-neovim.compositeEscape1",
-    "key": "j",
-    "when": "editorTextFocus && neovim.mode == 'insert' && !editorReadonly",
-    "args": "j"
   },
   {
     "key": "ctrl+j",
