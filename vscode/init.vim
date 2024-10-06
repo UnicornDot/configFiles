@@ -94,3 +94,6 @@ noremap J 5j
 nnoremap Y y$
 " cosy to system clipboard
 vnoremap Y "+y
+
+set clipboard=unnamedplus
+

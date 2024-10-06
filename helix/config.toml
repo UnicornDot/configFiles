@@ -19,6 +19,11 @@ line-number = "relative"
 mouse = true
 scrolloff = 8
 cursorline = true
+shell = [  "powershell", "-NoLogo"]
+bufferline = "multiple"
+color-modes = true
+popup-border = "all"
+
 
 [editor.cursor-shape]
 normal="block"
