@@ -1,0 +1,73 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "workspace::NewSearch"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": ["workspace::SendKeystrokes", "escape"],
+      "j k": ["workspace::SendKeystrokes", "escape"],
+      "alt-o": ["workspace::SendKeystrokes", "escape o"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "J": ["workspace::SendKeystrokes", "5 j"],
+      "K": ["workspace::SendKeystrokes", "5 k"],
+      "H": ["workspace::SendKeystrokes", "^"],
+      "L": ["workspace::SendKeystrokes", "$"]
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "alt-q": "pane::CloseActiveItem",
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-l": "pane::ActivateNextItem",
+      "space o": "outline::Toggle",
+      "space e": "project_panel::ToggleFocus",
+      "space w k": "pane::SplitUp",
+      "space w j": "pane::SplitDown",
+      "space w h": "pane::SplitLeft",
+      "space w l": "pane::SplitRight",
+      "space g b": "editor::ToggleGitBlame",
+      "space g d": "editor::ToggleHunkDiff"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrev",
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "c": "project_panel::Copy",
+      "d": "project_panel::Delete",
+      "p": "project_panel::Paste",
+      "r": "project_panel::Rename",
+      "x": "project_panel::Cut",
+      "y p": "project_panel::CopyPath",
+      "y r": "project_panel::CopyRelativePath"
+    }
+  },
+  {
+    "context": "Dock || Terminal || Editor",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivePanelDirection", "Left"],
+      "ctrl-l": ["workspace::ActivePanelDirection", "Right"],
+      "ctrl-k": ["workspace::ActivePanelDirection", "Up"],
+      "ctrl-j": ["workspace::ActivePanelDirection", "Down"]
+    }
+  }
+]
