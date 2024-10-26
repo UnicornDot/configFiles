@@ -498,7 +498,7 @@ colors:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # at once.
-key_bindings:
+key_bindings:                                                  
   # (Windows/Linux only)
   - { key: V,        mods: Control,        action: Paste            }
   - { key: C,        mods: Control,        action: Copy             }
