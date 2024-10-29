@@ -1,3 +1,14 @@
 [2m2024-10-20T10:51:15.818484Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[24].commands: unexpected argument found
  at line 237 column 15
 [2m2024-10-20T10:51:24.221601Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute '/c wezterm'.\n\nError: Program path is not valid for command '/c wezterm'."
+[2m2024-10-28T01:52:25.814283Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: 操作已被用户取消。 (0x800704C7)"
+[2m2024-10-29T02:18:33.068564Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No common ancestor between containers.
+[2m2024-10-29T02:18:34.806115Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:36.483339Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:37.036345Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:37.571874Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:38.084064Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:38.777123Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:39.589091Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:43.991233Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.
+[2m2024-10-29T02:18:48.738027Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Parent does not have a tiling direction.

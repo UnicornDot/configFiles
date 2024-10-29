@@ -5,7 +5,7 @@
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
 
 i {
-  color: rgb(115 130 175 / 95%);
+  /* color: rgb(115 130 175 / 95%); */
   margin-right: 8px;
   font-weight: bold;
   font-size: 20px;
@@ -14,10 +14,10 @@ i {
 body {
   color: rgba(255,255,255, 0.9); 
   font-family: Inter, ui-monospace, monospace;
-  font-style: italic;
+  font-weight: Bold;
   font-size: 16px;
   overflow: hidden;
-  background: #1c1c1ccc;
+  background: transparent;
 }
 
 html,
@@ -28,10 +28,15 @@ body,
   height: 100%;
 }
 
+button {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
 
 #root {
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
-  background: linear-gradient(rgb(0 0 0 / 95%), rgb(5 2 20 / 85%)); 
+  border-bottom: 0px solid rgba(255, 255, 255, 0.5); 
+  background: linear-gradient(rgba(0 0 0 / 0%), rgba(5 2 20 / 0%)); 
 }
 
 .app {
@@ -39,7 +44,10 @@ body,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
-  padding: 4px 1.0vw;
+  padding: 0px 10px 0px 10px;
+  margin: 1px 5px 1px 5px;
+  border-radius: 18px;
+  border: 3px solid #1e1e2eac;
 }
 
 .left,
@@ -51,20 +59,28 @@ body,
 
 .center {
   justify-self: center;
+  background-color: rgba(255 255 255 / 20%);
+  padding: 3px 6px;
+  border-radius: 14px;
 }
 
 .right {
   justify-self: end;
 }
 
+.wea-value {
+  margin: 0px 8px 0px 8px;
+  font-size: 20px;
+  font-style: Italic;
+}
+
 .logo,
 .binding-mode,
-.tiling-direction,
 .network,
 .memory,
 .cpu,
 .battery {
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .workspaces {
@@ -73,12 +89,14 @@ body,
 }
 
 .workspace {
-  background: rgb(255 255 255 / 5%);
-  margin-right: 8px;
-  padding: 4px 8px;
+  font-family: Cascadia Code;
+  font-style: Italic;
+  background: rgb(95 120 225 / 15%);
+  padding: 3px 7px;
+  margin-right: 2px;
   color: rgb(255 255 255 / 90%);
   border: none;
-  border-radius: 8px;
+  border-radius: 18px;
   cursor: pointer;
 
   &.displayed {
@@ -89,15 +107,19 @@ body,
   &:hover {
     background: rgb(75 115 255 / 50%);
   }
+  &:nth-last-child(1) {
+    margin-right: 0px;
+  }
 }
 
 .binding-mode,
-.tiling-direction {
+.tiling-direction{
   background: rgb(255 255 255 / 15%);
   color: rgb(100 216 200 / 90%);
   border-radius: 6px;
+  font-size: 18px;
   line-height: 1;
-  padding: 6px 6px;
+  padding: 4px 5px;
   border: 0;
   cursor: pointer;
 }
@@ -119,5 +141,9 @@ body,
   font-size: 7px;
   left: -8px;
   top: 3px;
+}
+
+.date-value {
+  font-size: 20px;
 }
 

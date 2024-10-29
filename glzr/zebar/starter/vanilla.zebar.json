@@ -5,9 +5,10 @@
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
-  "transparent": false,
-  "defaultPlacements": [
+  "transparent": true,
+  "presets": [
     {
+      "name": "vinilla",
       "anchor": "top_left",
       "offsetX": "0px",
       "offsetY": "0px",
