@@ -135,6 +135,7 @@ button {
 
 .battery {
   position: relative;
+  margin-left: 8px;
 }
 
 .battery .charging-icon {
@@ -157,14 +158,35 @@ button {
   }
 }
 
-.battery-value,
 .cpu-value,
 .mem-value {
-  margin: 0 8px 2px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 4px 2px 0;
   font-size: 24px;
+  & i {
+    font-size: 12px;
+  }
 }
 
+.battery-value {
+  font-size: 20px;
+  margin: 0 18px 2px 0;
+}
+
+
+.date {
+  margin: 4px 3px 0 0;
+}
 .date-value {
-  font-size: 24px;
-  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  & i {
+    font-size: 14px;
+  }
+  & i:nth-last-child(1) {
+    font-size: 12px;
+  }
 }

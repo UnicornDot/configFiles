@@ -9,7 +9,8 @@ const providers = zebar.createProviderGroup({
   network: { type: 'network' },
   glazewm: { type: 'glazewm' },
   cpu: { type: 'cpu' },
-  date: { type: 'date', formatting: 'yyyy-MM-dd t', locale: 'zh' },
+  date: { type: 'date', formatting: 'yyyy/MM/dd', locale: 'zh' },
+  time: { type: 'date', formatting: 't', locale: 'zh' },
   battery: { type: 'battery' },
   memory: { type: 'memory' },
   keyboard: {type: "keyboard"},
@@ -222,7 +223,8 @@ function App() {
               {getMemoryIcon(output.memory)}
             </div>
             <div className="mem-value"> 
-              {Math.round(output.memory.usage)}%
+              <i>mem</i>
+              <i>{Math.round(output.memory.usage)}%</i>
             </div>
           </>
         )}
@@ -233,7 +235,8 @@ function App() {
               {getCpuIcon(output.cpu)}
             </div>
             <div className="cpu-value">
-              {Math.round(output.cpu.usage)}%
+              <i>cpu</i>
+              <i>{Math.round(output.cpu.usage)}%</i>
             </div>
           </>
         )}
@@ -250,15 +253,15 @@ function App() {
           </>
         )}
         {output.date && (
-          <div className="date-block">
+          <>
             <div className="date">
               {getDateIcon()}
             </div>
             <div className="date-value">
-              {output.date?.formatted}
+              <i>{output.time?.formatted}</i>
+              <i>{output.date?.formatted}</i>
             </div>
-          </div>
-
+          </>
         )}
       </div>
     </div>
