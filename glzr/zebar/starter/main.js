@@ -10,7 +10,7 @@ const providers = zebar.createProviderGroup({
   glazewm: { type: 'glazewm' },
   cpu: { type: 'cpu' },
   date: { type: 'date', formatting: 'yyyy/MM/dd', locale: 'zh' },
-  time: { type: 'date', formatting: 't', locale: 'zh' },
+  time: { type: 'date', formatting: 't EEE', locale: 'zh' },
   battery: { type: 'battery' },
   memory: { type: 'memory' },
   keyboard: {type: "keyboard"},
