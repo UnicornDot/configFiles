@@ -4,11 +4,11 @@
   "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
-  "resizable": false,
+  "resizable": true,
   "transparent": true,
   "presets": [
     {
-      "name": "default",
+      "name": "round",
       "anchor": "top_left",
       "offsetX": "0px",
       "offsetY": "0px",
