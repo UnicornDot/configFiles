@@ -39,6 +39,7 @@ button {
 }
 
 .app {
+  backdrop-filter: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -57,27 +58,23 @@ button {
 
 .center {
   justify-self: center;
+  background: #0a0a0aaa;
+  color: black;
+  padding: 2px 10px 2px 10px;
+  border-radius: 16px;
 }
 
 .right {
   justify-self: end;
 }
 
-.wea-value {
-  margin: 0px 8px 0px 8px;
-  font-size: 20px;
-  font-style: Italic;
-}
-
-.logo,
-.binding-mode{
-  margin-right: 10px;
+.logo {
+  margin: 4px 0 0 0; 
 }
 
 .network,
 .memory,
 .cpu,
-.date,
 .battery {
   margin-right: 3px;
 }
@@ -85,18 +82,23 @@ button {
 .workspaces {
   display: flex;
   align-items: center;
-  margin: 0 2px 2px 0;
+  justify-content: center;
+  margin: 5px 10px 5px 10px;
+  padding: 0 8px 0px 8px; 
+  border-left: 2px solid #ffffff70;
+  border-right: 2px solid #ffffff70;
 }
 
 .workspace {
   font-family: Cascadia Code;
   font-style: Italic;
-  background: rgb(65 120 225 / 40%);
-  padding: 6px 8px 3px 8px;
+  font-size: 14px;
+  background: rgb(75 115 225 / 30%);
+  padding: 2px 6px 2px 6px;
   margin-right: 2px;
   color: rgb(255 255 255 / 90%);
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
 
   &.displayed {
@@ -105,7 +107,8 @@ button {
 
   &.focused,
   &:hover {
-    background: rgb(75 115 255 / 65%);
+    background: rgb(75 115 255 / 95%);
+    padding: 2px 15px 2px 15px;
   }
   &:nth-last-child(1) {
     margin-right: 0px;
@@ -119,8 +122,7 @@ button {
   border-radius: 6px;
   font-size: 18px;
   line-height: 1;
-  margin: 0px 2px 2px 8px;
-  padding: 5px 5px 6px 5px;
+  margin: 0px 2px 2px 0px;
   border: 0;
   cursor: pointer;
 }
@@ -138,18 +140,19 @@ button {
   margin-left: 8px;
 }
 
-.battery .charging-icon {
-  position: absolute;
-  font-size: 7px;
-  left: -8px;
-  top: 3px;
-}
-
 .date-block {
   display: flex;
   justify-content: center;
 }
+.date {
+  padding: 1px 3px 0 0;
+}
 
+.wea-value {
+  margin: 0px 8px 0px 8px;
+  font-size: 20px;
+  font-style: Italic;
+}
 .net-value {
   font-size: 10px;
   margin: 0 8px 2px 0;
@@ -163,7 +166,6 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0 4px 2px 0;
-  font-size: 24px;
   & i {
     font-size: 12px;
   }
@@ -171,12 +173,7 @@ button {
 
 .battery-value {
   font-size: 20px;
-  margin: 0 10px 2px 0;
-}
-
-
-.date {
-  margin: 4px 3px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .date-value {
@@ -185,10 +182,12 @@ button {
   justify-content: center;
   align-items: end;
   & i {
-    font-size: 14px;
+    font-family: MonoLisa;
+    font-size: 13px;
     font-style: normal;
   }
   & i:nth-last-child(1) {
+    font-family: MonoLisa;
     font-size: 12px;
     font-style: normal;
   }
