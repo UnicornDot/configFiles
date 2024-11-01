@@ -22,8 +22,7 @@ body {
 html,
 body,
 #root {
-  backdrop-filter: 10px;
-  opacity: 0.9;
+  opacity: 1.0;
   height: 100%;
 }
 
@@ -39,14 +38,15 @@ button {
 }
 
 .app {
+  opacity: 0.9;
   backdrop-filter: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  height: 94%;
+  height: 96%;
   padding: 0px 10px 0px 10px;
   border: 1px solid #1e1e2e1a;
-  background: #1e1e2e0c;
+  background: #1e1e2e38;
 }
 
 .left,
@@ -58,9 +58,10 @@ button {
 
 .center {
   justify-self: center;
-  background: #0a0a0aaa;
+  background: #0a0a0a3f;
   color: black;
-  padding: 2px 10px 2px 10px;
+  padding: 1px 10px 1px 10px;
+  margin-bottom: 3px;
   border-radius: 16px;
 }
 
@@ -69,21 +70,21 @@ button {
 }
 
 .logo {
-  margin: 4px 0 0 0; 
+  margin: 3px 0 0 0; 
 }
 
 .network,
 .memory,
 .cpu,
 .battery {
-  margin-right: 3px;
+  margin: 1px 3px 0 0;
 }
 
 .workspaces {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 10px 5px 10px;
+  margin: 4px 10px 5px 10px;
   padding: 0 8px 0px 8px; 
   border-left: 2px solid #ffffff70;
   border-right: 2px solid #ffffff70;
@@ -95,10 +96,11 @@ button {
   font-size: 14px;
   background: rgb(75 115 225 / 30%);
   padding: 2px 6px 2px 6px;
+  transition: all 0.5s ease-out;
   margin-right: 2px;
   color: rgb(255 255 255 / 90%);
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 
   &.displayed {
@@ -109,6 +111,7 @@ button {
   &:hover {
     background: rgb(75 115 255 / 95%);
     padding: 2px 15px 2px 15px;
+    transition: all 0.5s ease-out;
   }
   &:nth-last-child(1) {
     margin-right: 0px;
@@ -116,18 +119,18 @@ button {
 }
 
 .tiling-direction{
-  background: rgb(255 255 255 / 15%);
+  background: transparent;
   color: rgb(100 216 200 / 90%);
   border-radius: 6px;
-  font-size: 18px;
-  line-height: 1;
-  margin: 2px 2px 2px 0px;
-  border: 0;
+  margin: 4px 0 0 0;
   cursor: pointer;
+}
+button {
+  line-height: none;
 }
 
 .binding-mode {
-  background: rgb(255 255 255 / 15%);
+  background-color: transparent;
   color: rgb(100 216 200 / 90%);
   border-radius: 6px;
   font-size: 18px;
@@ -135,19 +138,13 @@ button {
   padding: 1px 2px;
   cursor: pointer;
 }
-
-
-.binding-mode {
-  margin-right: 8px;
-}
-
 .cpu .high-usage {
   color: #900029;
 }
 
 .battery {
   position: relative;
-  margin-left: 8px;
+  margin: 2px 0 0 8px;
 }
 
 .date-block {
@@ -167,7 +164,7 @@ button {
   font-size: 10px;
   margin: 0 8px 2px 0;
   & i {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 

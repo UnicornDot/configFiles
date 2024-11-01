@@ -36,7 +36,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '45px'
+    top: '42px'
     right: '5px'
     bottom: '5px'
     left: '5px'
@@ -235,7 +235,7 @@ keybindings:
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
   - commands: ['shell-exec wt']
-    bindings: ['alt+enter']
+    bindings: ['alt+shift+enter']
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']

@@ -18,7 +18,7 @@ const providers = zebar.createProviderGroup({
 });
 
 createRoot(document.getElementById('root')).render(<App />);
-
+// className={`tiling-direction nf ${output.glazewm.tilingDirection === 'horizontal' ? 'nf-cod-split_horizontal' : 'nf-cod-split_vertical'}`}
 function App() {
   const [output, setOutput] = useState(providers.outputMap);
 
@@ -134,9 +134,9 @@ function App() {
   // split mode
   function getModeIcon(mode) {
     if (mode.tilingDirection == "horizontal") {
-      return <svg t="1730168772676" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="22136" width="16" height="16"><path d="M252.068571 906.496h520.283429c89.581714 0 134.144-44.562286 134.144-132.845714V250.331429c0-88.283429-44.562286-132.845714-134.144-132.845715H252.068571c-89.142857 0-134.582857 44.141714-134.582857 132.845715V773.668571c0 88.704 45.44 132.845714 134.582857 132.845715z m1.28-68.992c-42.843429 0-66.852571-22.710857-66.852571-67.291429V253.805714c0-44.580571 24.009143-67.291429 66.852571-67.291428h222.866286v651.008z m517.723429-651.008c42.422857 0 66.432 22.710857 66.432 67.291429V770.194286c0 44.580571-24.009143 67.291429-66.432 67.291428H548.205714V186.496z" p-id="22137" fill="#dbdbdb"></path></svg>
+      return <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.9414 5.16614V16.7161" stroke="#FF9F0A" stroke-width="1.98333" stroke-linecap="round" stroke-linejoin="round"/> <path d="M1.43359 7.4328V14.4495C1.43359 17.7632 4.11989 20.4495 7.43359 20.4495H14.4503C17.764 20.4495 20.4503 17.7632 20.4503 14.4495V7.4328C20.4503 4.11909 17.764 1.4328 14.4503 1.4328H7.43359C4.11989 1.4328 1.43359 4.11909 1.43359 7.4328Z" stroke="#FF9F0A" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round"/> </svg>
     }else {
-      return <svg t="1730168753848" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21878" width="16" height="16"><path d="M252.068571 906.496h520.283429c89.581714 0 134.144-44.562286 134.144-132.845714V250.331429c0-88.283429-44.562286-132.845714-134.144-132.845715H252.068571c-89.142857 0-134.582857 44.141714-134.582857 132.845715V773.668571c0 88.704 45.44 132.845714 134.582857 132.845715zM186.514286 253.805714c0-44.580571 24.009143-67.291429 66.852571-67.291428h517.723429c42.422857 0 66.432 22.710857 66.432 67.291428v221.568H186.496zM253.348571 837.485714c-42.843429 0-66.852571-22.710857-66.852571-67.291428V547.364571h651.008V770.194286c0 44.580571-24.009143 67.291429-66.432 67.291428z" p-id="21879" fill="#dbdbdb"></path></svg>
+      return <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.43359 7.4328V14.4495C1.43359 17.7632 4.11989 20.4495 7.43359 20.4495H14.4503C17.764 20.4495 20.4503 17.7632 20.4503 14.4495V7.4328C20.4503 4.11909 17.764 1.4328 14.4503 1.4328H7.43359C4.11989 1.4328 1.43359 4.11909 1.43359 7.4328Z" stroke="#FF9F0A" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.99219 10.9412H16.8921" stroke="#FF9F0A" stroke-width="1.98333" stroke-linecap="round" stroke-linejoin="round"/> </svg>
     }
   }
 
@@ -185,11 +185,9 @@ function App() {
               </button>
             ))}
 
-            <button className={`tiling-direction nf ${output.glazewm.tilingDirection === 'horizontal' ? 'nf-cod-split_horizontal' : 'nf-cod-split_vertical'}`}
-              onClick={() =>
-                output.glazewm.runCommand('toggle-tiling-direction')
-              }
-            >
+            <button className="tiling-direction"
+              onClick={() => output.glazewm.runCommand('toggle-tiling-direction')}>
+              {getModeIcon(output.glazewm)}
             </button>
           </>
         )}
