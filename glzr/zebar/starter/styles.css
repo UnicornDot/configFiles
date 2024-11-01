@@ -115,17 +115,27 @@ button {
   }
 }
 
-.binding-mode,
 .tiling-direction{
   background: rgb(255 255 255 / 15%);
   color: rgb(100 216 200 / 90%);
   border-radius: 6px;
   font-size: 18px;
   line-height: 1;
-  margin: 0px 2px 2px 0px;
+  margin: 2px 2px 2px 0px;
   border: 0;
   cursor: pointer;
 }
+
+.binding-mode {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(100 216 200 / 90%);
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 1px 2px 2px 2px;
+  padding: 1px 2px;
+  cursor: pointer;
+}
+
 
 .binding-mode {
   margin-right: 8px;
