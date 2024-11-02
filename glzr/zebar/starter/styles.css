@@ -61,7 +61,7 @@ button {
   background: #0a0a0a3f;
   color: black;
   padding: 1px 10px 1px 10px;
-  margin-bottom: 3px;
+  margin: 2px 0px;
   border-radius: 16px;
 }
 
@@ -70,7 +70,7 @@ button {
 }
 
 .logo {
-  margin: 3px 0 0 0; 
+  margin: 4px 0 0 0; 
 }
 
 .network,
@@ -120,22 +120,19 @@ button {
 
 .tiling-direction{
   background: transparent;
-  color: rgb(100 216 200 / 90%);
-  border-radius: 6px;
   margin: 4px 0 0 0;
   cursor: pointer;
 }
+
 button {
   line-height: none;
 }
 
 .binding-mode {
   background-color: transparent;
-  color: rgb(100 216 200 / 90%);
-  border-radius: 6px;
-  font-size: 18px;
-  margin: 1px 2px 2px 2px;
-  padding: 1px 2px;
+  margin: 3px 2px 2px 2px;
+  padding: 3px 2px;
+  line-height: 0.5;
   cursor: pointer;
 }
 .cpu .high-usage {
