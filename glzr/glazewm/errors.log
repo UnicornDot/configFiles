@@ -15,3 +15,4 @@
 [2m2024-10-29T02:56:52.667155Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No common ancestor between containers.
 [2m2024-11-01T02:58:39.769006Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[24].commands: unrecognized subcommand
  at line 237 column 15
+[2m2024-11-04T12:19:49.351756Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
