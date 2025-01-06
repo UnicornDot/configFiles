@@ -7,8 +7,6 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Noctis Uva",
   "workbench.activityBar.location": "top",
-  "window.customTitleBarVisibility": "windowed",
-  "window.titleBarStyle": "custom",
   "window.titleSeparator": " ⚡ ",
   "window.commandCenter": true,
   "window.zoomLevel": 1,
@@ -40,7 +38,7 @@
   },
   "terminal.integrated.defaultProfile.windows": "powershell_profile",
   "vscode-neovim.neovimExecutablePaths.win32": "D:/Scoop/apps/neovim/current/bin/nvim.exe",
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.win32": "$HOME/software/config/vscode/init.vim",
   "vscode-neovim.neovimInitVimPaths.linux": "$HOME/software/config/vscode/init.vim",
   "vscode-neovim.compositeKeys": {
@@ -1147,6 +1145,7 @@
   "animations.Install-Method": "Apc Customize UI++",
   "animations.Enabled": true,
   "apc.imports": [
-    "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
+    "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
   ],
+  "window.titleBarStyle": "custom",
 }
