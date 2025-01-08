@@ -5,7 +5,6 @@ file-types = ["rs"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "rustfmt", args = ["--config", "tab_spaces=4"] }
 auto-format = true
-inlay-hints = { location-links = false }
 roots = ["Cargo.toml", "Cargo.lock"]
 
 
@@ -15,8 +14,6 @@ scope = "source.lua"
 file-types = ["lua"]
 indent = { tab-width = 2, unit = "  " }
 auto-format = true
-inlay-hints = { location-links = false }
-
 
 
 [[language]]
@@ -24,9 +21,8 @@ name = "python"
 scope = "source.python"
 file-types = ["py", "pyw", "pyi", "pyd", "pyc"]
 comment-token = "#"
-inlay-hints = { location-links = false }
 auto-format = true
-language-server = { command = "pylsp", args = ["--stdio"] }
+language-servers = [ "basedpyright"] 
 indent = { tab-width = 2, unit = "  " }
 formatter = { command = "black", args = ["--quiet", "-"] }
 roots = ["setup.cfg", "pyproject.toml", "requirements.txt", "Pipfile", "Pipfile.lock"]
@@ -37,7 +33,6 @@ name = "typescript"
 scope = "source.ts"
 file-types = ["ts", "tsx", "mts", "cts"]
 auto-format = true
-inlay-hints = { location-links = false }
 roots = ["tsconfig.json", "package.json",]
 
 
@@ -46,19 +41,16 @@ name = "javascript"
 scope = "source.js"
 file-types = ["js", "jsx", "mjs", "cjs"]
 auto-format = true
-inlay-hints = { location-links = false }
 roots = ["package.json"]
+
 
 [[language]]
 name = "json"
 scope = "source.json"
 file-types = ["json", "jsonc"]
-inlay-hints = { location-links = false }
 
 
 [[language]]
 name = "toml"
 scope = "source.toml"
 file-types = [ "toml" ] 
-inlay-hints = { location-links = false }  
-// 
