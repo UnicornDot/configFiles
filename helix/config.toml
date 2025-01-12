@@ -24,8 +24,16 @@ line-number = "relative"
 mouse = true
 scrolloff = 8
 cursorline = true
-shell = [  "powershell", "-NoLogo"]
+# shell = ["powershell", "/c"]
 bufferline = "multiple"
+continue-comments = true
+auto-completion = true
+path-completion = true
+auto-format = true
+auto-pairs = true
+idle-timeout = 300
+completion-timeout = 300
+completion-replace = true
 color-modes = true
 popup-border = "all"
 end-of-line-diagnostics = "hint"
@@ -47,6 +55,11 @@ character = "│"
 
 [editor.lsp]
 display-messages = true
+auto-signature-help = true
+display-signature-help-docs = true
+snippets = true 
+display-inlay-hints = true
+goto-reference-include-declaration = true
 
 
 [editor.statusline]
