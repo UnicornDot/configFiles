@@ -1145,11 +1145,12 @@
   "animations.Install-Method": "Apc Customize UI++",
   "animations.Enabled": true,
   "apc.imports": [
-    "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
+    "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
   "window.titleBarStyle": "custom",
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
-  ]
+  ],
+  "window.customTitleBarVisibility": "windowed"
 }
