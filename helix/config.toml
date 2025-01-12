@@ -11,7 +11,7 @@ g = { a = "code_action" }
 "C-r" = ":reload"
 "\\" = ":reflow" # |
 a = ["move_char_right", "insert_mode"]
-H = ["goto_line_head"]
+H = ["goto_line_start"]
 L = ["goto_line_end"]
  
 [keys.insert]
