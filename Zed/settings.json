@@ -7,13 +7,15 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "icon_theme": "JetBrains New UI Icons (Dark)",
   "outline_panel": {
     "dock": "right"
   },
-  "ui_font_size": 24,
+  "ui_font_size": 22,
   "ui_font_family": "Inter",
   "ui_font_weight": 500,
   "buffer_font_size": 20,
+  "buffer_font_style": "italic",
   "buffer_font_family": "Cascadia Code",
   "buffer_font_weight": 400,
   "vim_mode": true,
@@ -27,13 +29,13 @@
   },
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Solarized Dark"
+    "light": "Catppuccin Latte (Blue Blur+)",
+    "dark": "JetBrains New Dark"
   },
   "assistant": {
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-5-sonnet-20240620"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -168,6 +170,11 @@
           "rules": ["import/order"]
         }
       }
+    },
+    "html": {
+      "command": "vscode-html-language-server",
+      "args": ["--stdio"],
+      "path": "C:/Users/unicorn/AppData/Local/Zed/extensions/work/html/node_modules/@zed-industries/vscode-langservers-extracted/bin/vscode-html-language-server"
     }
   },
   "telemetry": {
@@ -175,6 +182,11 @@
     "metrics": false
   },
   "features": {
-    "inline_completion_provider": "supermaven"
+    "edit_prediction_provider": "zed"
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "git_status": true
   }
 }
