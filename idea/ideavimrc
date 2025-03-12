@@ -1,8 +1,39 @@
 " Source your .vimrc
 source ~/software/config/idea/option.vim
 
-" auto switch IM
-set keep-english-in-normal
-
 " surround 插件
 set surround
+
+" idea smart json 
+set ideajoin
+
+" idea 重构功能
+set idearefactormode=keep
+
+" easy-motion
+set easymotion
+
+" multiple cursor
+set multiple-cursors
+set argtextobj
+set textobj-entire
+set ReplaceWithRegister
+
+" 可以使用 NerdTree 一样的快捷键操作文件树
+set NERDTree
+
+" handler 
+sethandler <C-J> a:ide
+sethandler <C-K> a:ide
+
+
+" yank 时高亮文本
+set highlightedyank
+
+" ---------------------------------------"
+nmap <c-h> <action>(PreviousTab)
+nmap <c-l> <action>(NextTab)
+
+nmap <leader>o <action>(FileStructurePopup)
+nmap <leader>e <action>(ActivateProjectToolWindow)
+nmap M <action>(QuickJavaDoc)
