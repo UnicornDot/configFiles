@@ -1,0 +1,19 @@
+.cpu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpu-value {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4px 2px 0;
+
+  & i {
+    font-size: 12px;
+  }
+}
+
+.cpu-icon {
+  margin: 0px 3px 0 4px;
+}

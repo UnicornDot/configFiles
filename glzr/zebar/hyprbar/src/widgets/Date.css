@@ -1,0 +1,29 @@
+
+.date-block {
+  display: flex;
+  justify-content: center;
+}
+
+.date {
+  padding: 2px 2px 0 0;
+}
+
+.date-value {
+  display: flex;
+  margin-right: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+  & i {
+    font-family: MonoLisa;
+    font-size: 13px;
+    font-style: normal;
+  }
+
+  & i:nth-last-child(1) {
+    font-family: MonoLisa;
+    font-size: 13px;
+    font-style: normal;
+  }
+}

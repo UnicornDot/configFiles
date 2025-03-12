@@ -1,0 +1,42 @@
+#root {
+  opacity: 1.0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(rgba(5 20 80 / 20%), rgba(5 20 50 / 20%), rgba(5 20 20 / 10%));
+  /* background: rgba(200 200 200 / 1%);  */
+  backdrop-filter: blur(30px);
+  --webkit-backdrop-filter: blur(-20px);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1px 10px 1px 10px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9)
+}
+
+.center {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a1f;
+  color: black;
+  padding: 1px 10px 1px 10px;
+  margin: 2px 0px;
+  border-radius: 16px;
+}
+
+.right {
+  justify-self: end;
+}

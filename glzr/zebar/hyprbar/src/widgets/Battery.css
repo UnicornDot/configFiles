@@ -1,0 +1,14 @@
+.battery-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battery-value {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+
+.battery-icon {
+  margin: 1px 3px 0 5px;
+}
