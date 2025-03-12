@@ -41,7 +41,8 @@
       "space w j": "pane::SplitDown",
       "space w h": "pane::SplitLeft",
       "space w l": "pane::SplitRight",
-      "space g b": "editor::ToggleGitBlame"
+      "space g b": "editor::ToggleGitBlame",
+      "space g d": "editor::ToggleSelectedDiffHunks"
     }
   },
   {
@@ -63,10 +64,10 @@
   {
     "context": "Dock || Terminal",
     "bindings": {
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-k": "workspace::ActivatePaneUp"
+      "ctrl-h": ["workspace::ActivatePane", 0],
+      "ctrl-l": ["workspace::ActivatePane", 1],
+      "ctrl-k": ["workspace::ActivatePane", 2],
+      "ctrl-j": ["workspace::ActivatePane", 3]
     }
   }
 ]
