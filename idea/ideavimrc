@@ -4,6 +4,8 @@ source ~/software/config/idea/option.vim
 " surround 插件
 set surround
 
+set keep-english-in-normal
+
 " idea smart json 
 set ideajoin
 
@@ -13,8 +15,18 @@ set idearefactormode=keep
 " easy-motion
 set easymotion
 
+" 快速移动定位
+set quickscope
+
+" mif maf in other language
+set functiontextobj
+
+" 展示寄存器的功能
+set peekaboo
+
 " multiple cursor
-set multiple-cursors
+set multicursor
+
 set argtextobj
 set textobj-entire
 set ReplaceWithRegister
