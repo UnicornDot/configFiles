@@ -7,7 +7,7 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "icon_theme": "Material Icon Theme",
   "outline_panel": {
     "dock": "right"
   },
