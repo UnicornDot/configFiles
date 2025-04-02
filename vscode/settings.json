@@ -57,8 +57,10 @@
       ]
     }
   },
+  "whichkey.showButtons": true,
+  "whichkey.showIcons": true,
   "whichkey.sortOrder": "alphabetically",
-  "whichkey.delay": 0,
+  "whichkey.delay": 100,
   "whichkey.bindings": [
     {
       "key": ";",
@@ -1148,9 +1150,5 @@
     "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
   "window.titleBarStyle": "custom",
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "window.customTitleBarVisibility": "windowed"
+  "workbench.settings.applyToAllProfiles": []
 }

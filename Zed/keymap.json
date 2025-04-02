@@ -23,25 +23,26 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "J": ["workspace::SendKeystrokes", "5 j"],
-      "K": ["workspace::SendKeystrokes", "5 k"],
-      "H": ["workspace::SendKeystrokes", "^"],
-      "L": ["workspace::SendKeystrokes", "$"]
+      "shift-j": ["workspace::SendKeystrokes", "5 j"],
+      "shift-k": ["workspace::SendKeystrokes", "5 k"],
+      "shift-h": ["workspace::SendKeystrokes", "^"],
+      "shift-l": ["workspace::SendKeystrokes", "$"]
     }
   },
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       "alt-q": "pane::CloseActiveItem",
-      "alt-h": "pane::ActivatePrevItem",
+      "alt-h": "pane::ActivatePreviousItem",
       "alt-l": "pane::ActivateNextItem",
+      "space f": "file_finder::Toggle",
       "space o": "outline::Toggle",
       "space e": "project_panel::ToggleFocus",
       "space w k": "pane::SplitUp",
       "space w j": "pane::SplitDown",
       "space w h": "pane::SplitLeft",
       "space w l": "pane::SplitRight",
-      "space g b": "editor::ToggleGitBlame",
+      "space g b": "git::Blame",
       "space g d": "editor::ToggleSelectedDiffHunks"
     }
   },
@@ -49,25 +50,25 @@
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "j": "menu::SelectNext",
-      "k": "menu::SelectPrev",
+      "k": "menu::SelectPrevious",
       "a": "project_panel::NewFile",
-      "A": "project_panel::NewDirectory",
+      "shift-a": "project_panel::NewDirectory",
       "c": "project_panel::Copy",
       "d": "project_panel::Delete",
       "p": "project_panel::Paste",
       "r": "project_panel::Rename",
       "x": "project_panel::Cut",
-      "y p": "project_panel::CopyPath",
-      "y r": "project_panel::CopyRelativePath"
+      "y p": "workspace::CopyPath",
+      "y r": "workspace::CopyRelativePath"
     }
   },
   {
     "context": "Dock || Terminal",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePane", 0],
-      "ctrl-l": ["workspace::ActivatePane", 1],
-      "ctrl-k": ["workspace::ActivatePane", 2],
-      "ctrl-j": ["workspace::ActivatePane", 3]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   }
 ]
