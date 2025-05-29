@@ -30,9 +30,9 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte (Blue Blur+)",
-    "dark": "JetBrains New Dark"
+    "dark": "Catppuccin Macchiato (Blue Blur+)"
   },
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
@@ -170,11 +170,6 @@
           "rules": ["import/order"]
         }
       }
-    },
-    "html": {
-      "command": "vscode-html-language-server",
-      "args": ["--stdio"],
-      "path": "C:/Users/unicorn/AppData/Local/Zed/extensions/work/html/node_modules/@zed-industries/vscode-langservers-extracted/bin/vscode-html-language-server"
     }
   },
   "telemetry": {
