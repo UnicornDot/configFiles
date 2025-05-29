@@ -129,16 +129,13 @@ window_rules:
       - window_process: { equals: 'KeyReader'}
         window_title: { regex:  'KeyReader' }
         
-  - commands: ['set-floating']
+  - commands: ['toggle-floating --centered']
     match: 
       - window_process: { equals: 'QQ' }
         window_title: { regex: 'QQ.*' }
-      - window_process: { equals: 'WeChat' }
-        window_class: { regex: 'WeChat.*' }
+      - window_process: { equals: 'Weixin' }
       - window_process: { equals: 'wemeet' }
-        window_class: { regex: 'wemeet' }
-      - window_process: { equals: 'Settings' }
-        window_title: { equals: 'Settings' }
+      - window_process: { equals: 'Taskmgr' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
