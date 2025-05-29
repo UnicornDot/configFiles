@@ -1,17 +1,17 @@
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "e06c47f"
-hash = "7df84299e89ffefd4686d1e20a295c8a"
+rev = "1342efe"
+hash = "a84a339953a568fee1d8beb63e6dca73"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "2730199"
-hash = "e0d2c8d7e7afe5b82270367098d1a821"
+rev = "a54b96a"
+hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "2730199"
-hash = "7918aab6a71caf31b58411f789195677"
+rev = "a54b96a"
+hash = "a7ab702e1ef0c097defbc976ed34c186"
 
 [[plugin.deps]]
 use = "h-hg/yamb"
