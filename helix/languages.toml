@@ -54,3 +54,17 @@ file-types = ["json", "jsonc"]
 name = "toml"
 scope = "source.toml"
 file-types = [ "toml" ] 
+
+[[language]]
+name = "kotlin"
+scope = "source.kotlin"
+file-types = [ "kt", "kts" ]
+roots = ["build.gradle", "build.gradle.kts", "settings.gradle", "settings.gradle.kts"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["kotlin-language-server"]
+formatter = { command = "ktlint" }
+
+[language-server.kotlin-language-server]
+command = "kotlin-language-server"
