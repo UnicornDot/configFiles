@@ -12,6 +12,8 @@ prepend_keymap = [
 	{ on = [ "'", "r", ], run = "plugin yamb delete_by_key", desc = "Delete bookmark by key" },
 	{ on = [ "P", ], run = "spot", desc = "Open spotter" },
 	{ on = [ "c", "a", ], run = "plugin compress", desc = "Archive selected files" },
+  # 挂载文件系统
+	{ on = [ "m","M" ], run = "plugin mount", desc = "Mount a file system" },
 ]
 
 keymap = [
@@ -88,7 +90,6 @@ keymap = [
 
 	# Create
 	{ on = "a", run = "create", desc = "Create a file (ends with / for directories)" },
-	{ on = "M", run = "create --dir", desc = "Create a directory" },
 
 	# Rename
 	{ on = ["c", "w"], run = "rename --empty=all", desc = "Rename selected file(s)" },

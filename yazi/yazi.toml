@@ -87,11 +87,13 @@ suppress_preload = false
 [plugin]
 fetchers = [
 	# Mimetype
-	{ id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
-	{ id = "git", name = "*", run = "git", prio = "normal" },
-	{ id = "git", name = "*/", run = "git", prio = "normal" },
+	{ id = "mime", url = "*", run = "mime.local", if = "!mime", prio = "high" },
+	{ id = "git", url = "*", run = "git", prio = "normal" },
+	{ id = "git", url = "*/", run = "git", prio = "normal" },
 ]
-preloaders = [
+
+
+prepend_preloaders = [
 	# Image
 	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
 	{ mime = "image/*", run = "image" },
@@ -103,8 +105,8 @@ preloaders = [
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/vnd.ms-opentype", run = "font" },
 ]
-previewers = [
-	{ name = "*/", run = "folder", sync = true },
+
+prepend_previewers = [
 	# Code
 	{ mime = "text/*", run = "code" },
 	{ mime = "*/{xml,javascript,x-wine-extension-ini}", run = "code" },
@@ -123,10 +125,16 @@ previewers = [
 	# Font
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/vnd.ms-opentype", run = "font" },
+
 	# Empty file
 	{ mime = "inode/x-empty", run = "empty" },
+
+]
+
+append_previewers = [
+	{ url = "*/", run = "folder", sync = true },
 	# Fallback
-	{ name = "*", run = "file" },
+	{ url = "*", run = "binary" },
 ]
 
 [input]
