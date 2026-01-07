@@ -38,8 +38,8 @@
       "model": "claude-opus-4-1-thinking"
     },
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     }
   },
   // 开启本地代理
@@ -133,30 +133,42 @@
       }
     },
     "Go": {
-      "code_actions_on_format": {
-        "source.organizeImports": true
-      }
-    },
+            "formatter": [
+                {
+                    "code_action": "source.organizeImports"
+                }
+            ]
+        },
     "Rust": {
       "tab_size": 4
     },
     "TSX": {
-      "code_actions_on_format": {
-        "source.organizeImport": true,
-        "source.fixAll.exlint": true
-      }
-    },
+            "formatter": [
+                {
+                    "code_action": "source.organizeImport"
+                },
+                {
+                    "code_action": "source.fixAll.exlint"
+                }
+            ]
+        },
     "JavaScript": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
-    },
+            "formatter": [
+                {
+                    "code_action": "source.fixAll.eslint"
+                }
+            ]
+        },
     "TypeScript": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true,
-        "source.organizeImport": true
-      }
-    }
+            "formatter": [
+                {
+                    "code_action": "source.fixAll.eslint"
+                },
+                {
+                    "code_action": "source.organizeImport"
+                }
+            ]
+        }
   },
   "lsp": {
     "rust-analyzer": {
