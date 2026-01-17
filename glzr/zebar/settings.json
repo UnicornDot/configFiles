@@ -1,8 +1,9 @@
 {
-  "$schema": "https://github.com/glzr-io/zebar/raw/v2.1.0/resources/settings-schema.json",
+  "$schema": "https://github.com/glzr-io/zebar/raw/v3.1.0/resources/settings-schema.json",
   "startupConfigs": [
     {
-      "path": "hyprbar\\hyprbar.zebar.json",
+      "pack": "hyprbar",
+      "widget": "hyprbar",
       "preset": "default"
     }
   ]
