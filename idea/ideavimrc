@@ -38,14 +38,17 @@ set NERDTree
 sethandler <C-J> a:ide
 sethandler <C-K> a:ide
 
+"flash
+nmap s <Action>(flash.search)
+xmap s <Action>(flash.search)
 
 " yank 时高亮文本
 set highlightedyank
 
 " ---------------------------------------"
-nmap <c-h> <action>(PreviousTab)
-nmap <c-l> <action>(NextTab)
+nmap <c-h> <Action>(PreviousTab)
+nmap <c-l> <Action>(NextTab)
 
-nmap <leader>o <action>(FileStructurePopup)
-nmap <leader>e <action>(ActivateProjectToolWindow)
+nmap <leader>o <Action>(FileStructurePopup)
+nmap <leader>e <Action>(ActivateProjectToolWindow)
 nmap M <action>(QuickJavaDoc)

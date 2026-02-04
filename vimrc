@@ -47,7 +47,7 @@ set cursorline
 :highlight cursorline cterm=bold ctermbg=black
 
 " colorschema
-colorscheme zaibatsu
+colorscheme default
 
 let mapleader=" "
 
