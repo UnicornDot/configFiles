@@ -24,14 +24,14 @@ rev = "eca1861"
 hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "d9cc2cb"
+hash = "b6073aadf2f9a1d5389a6d389f33f69c"
+
+[[plugin.deps]]
 use = "yazi-rs/plugins:mount"
 rev = "230b9c6"
 hash = "9ad20d763df07ce40fd09de549d914b0"
-
-[[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "e79b067"
-hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
 
 [flavor]
 deps = []

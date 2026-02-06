@@ -23,7 +23,6 @@ max_height      = 900
 cache_dir       = ""
 image_filter    = "triangle"
 image_quality   = 75
-sixel_fraction  = 15
 ueberzug_scale  = 1
 ueberzug_offset = [0, 0, 0, 0]
 
@@ -57,7 +56,7 @@ play = [
 [open]
 rules = [
 	# Folder
-	{ name = "*/", use = ["edit", "open", "reveal"] },
+	{ url = "*/", use = ["edit", "open", "reveal"] },
 	# Text
 	{ mime = "text/*", use = ["edit", "reveal"] },
 	# Image
@@ -73,7 +72,7 @@ rules = [
 	# Empty file
 	{ mime = "inode/empty", use = ["edit", "reveal"] },
 	# Fallback
-	{ name = "*", use = ["edit", "open", "reveal"] },
+	{ url = "*", use = ["edit", "open", "reveal"] },
 ]
 
 [tasks]
@@ -107,6 +106,7 @@ prepend_preloaders = [
 ]
 
 prepend_previewers = [
+	{ url = "*/", run = "folder", sync = true },
 	# Code
 	{ mime = "text/*", run = "code" },
 	{ mime = "*/{xml,javascript,x-wine-extension-ini}", run = "code" },
@@ -132,7 +132,6 @@ prepend_previewers = [
 ]
 
 append_previewers = [
-	{ url = "*/", run = "folder", sync = true },
 	# Fallback
 	{ url = "*", run = "binary" },
 ]

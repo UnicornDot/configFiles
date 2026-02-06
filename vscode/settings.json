@@ -31,7 +31,9 @@
   "terminal.integrated.profiles.windows": {
     "powershell_profile": {
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "args": ["-NoLogo"]
+      "args": [
+        "-NoLogo"
+      ]
     }
   },
   "terminal.integrated.defaultProfile.windows": "powershell_profile",
@@ -1075,7 +1077,9 @@
         }
       },
       {
-        "scope": ["punctuation.definition.tag.jsx"],
+        "scope": [
+          "punctuation.definition.tag.jsx"
+        ],
         "settings": {
           "foreground": "#5c6370"
         }
@@ -1092,7 +1096,9 @@
         }
       },
       {
-        "scope": ["entity.other.attribute-name.jsx"],
+        "scope": [
+          "entity.other.attribute-name.jsx"
+        ],
         "settings": {
           "foreground": "#e5c07b"
         }
@@ -1112,7 +1118,9 @@
         }
       },
       {
-        "scope": ["variable.other.constant.object.js"],
+        "scope": [
+          "variable.other.constant.object.js"
+        ],
         "settings": {
           "foreground": "#e06c75"
         }
@@ -1130,7 +1138,7 @@
     }
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "emmet.showSuggestionsAsSnippets": true,
   "[vue]": {
@@ -1148,5 +1156,6 @@
     "file://${userHome}/software/vscode/data/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
   "window.titleBarStyle": "custom",
-  "workbench.settings.applyToAllProfiles": []
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.colorTheme": "One Dark Pro Rust winter sementic"
 }

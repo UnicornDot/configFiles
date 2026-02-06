@@ -52,3 +52,8 @@ nmap <c-l> <Action>(NextTab)
 nmap <leader>o <Action>(FileStructurePopup)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
 nmap M <action>(QuickJavaDoc)
+
+
+" flash 
+nmap s <Action>(flash.search)
+xmap s <Action>(flash.search)
