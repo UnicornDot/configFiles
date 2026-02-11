@@ -47,7 +47,7 @@
           },
           "dockToEdge": {
             "enabled": false,
-            "edge": "top",
+            "edge": null,
             "windowMargin": "0px"
           }
         }
