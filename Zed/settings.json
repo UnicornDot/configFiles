@@ -7,6 +7,9 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "agent_ui_font_size": 20.0,
   "agent_buffer_font_size": 20.0,
   "icon_theme": "JetBrains New UI Icons (Dark)",
@@ -153,9 +156,6 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
-  },
-  "features": {
-    "edit_prediction_provider": "zed",
   },
   "project_panel": {
     "button": true,
