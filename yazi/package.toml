@@ -1,11 +1,11 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "1962818"
-hash = "26db011a778f261d730d4f5f8bf24b3f"
+rev = "1db18bb"
+hash = "c8d30a70659f1b880407e61c564ab4e8"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "1962818"
+rev = "1db18bb"
 hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
@@ -15,23 +15,23 @@ hash = "699fe07e0d2d1b4af8dafb84168eeb04"
 
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "cb6e8ec"
-hash = "424ada4807b20ccd4fc85d1d7c26d1e4"
+rev = "46a6b9f"
+hash = "771af2becc575a3f43d0542de823969d"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "eca1861"
-hash = "e519d894e94ded741e06aae4d4775981"
+rev = "a837101"
+hash = "635b0feb9215772d22020eb0abf0bb34"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "d9cc2cb"
-hash = "b6073aadf2f9a1d5389a6d389f33f69c"
+rev = "25161c1"
+hash = "5c7802a9ac249be88729978e3b9525bc"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "1962818"
-hash = "91937a4a9b779eabc6983e258befdfe9"
+rev = "1db18bb"
+hash = "e3260d0b1feded8c8e3ae3afa1169e30"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"

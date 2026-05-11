@@ -7,6 +7,12 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "edit_predictions": {
     "provider": "zed"
   },
@@ -34,9 +40,11 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte (Blue Blur+)",
-    "dark": "Nordfox - blurred",
+    "dark": "Catppuccin Macchiato (Blue Blur+)",
   },
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "default_profile": "ask",
     "inline_assistant_model": {
       "provider": "zed.dev",
