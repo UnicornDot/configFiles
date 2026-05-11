@@ -1165,5 +1165,8 @@
     "https://json.schemastore.org/": true,
     "https://json-schema.org/": true,
     "https://biomejs.dev": true
-  }
+  },
+  "window.dialogStyle": "custom",
+  "window.menuStyle": "custom",
+  "window.controlsStyle": "custom"
 }
