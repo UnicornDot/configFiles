@@ -74,8 +74,3 @@ columns = 120
 lines = 50
 
 [keyboard]
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"

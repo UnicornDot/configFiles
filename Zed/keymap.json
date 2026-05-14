@@ -7,12 +7,6 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
-    "bindings": {
-      "shift shift": "workspace::NewSearch",
-    },
-  },
-  {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j j": ["workspace::SendKeystrokes", "escape"],
