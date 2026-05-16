@@ -67,7 +67,7 @@ style = "Regular"
 decorations = "none"
 dynamic_padding = true
 opacity = 0.8
-padding = { x = 2, y = 3 }
+padding = { x = 2, y = 4 }
 
 [window.dimensions]
 columns = 120
