@@ -73,4 +73,22 @@
       "ctrl-\\": "terminal_panel::Toggle",
     },
   },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "shift-m": "editor::Hover"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "shift-k": "editor::Hover"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "shift-m": "vim::WindowMiddle"
+    }
+  }
 ]
