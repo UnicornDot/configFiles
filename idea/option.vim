@@ -89,7 +89,7 @@ endif
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Auto change directory to current dir
-autocmd BufEnter * silent! lcd %:p:h
+" autocmd bufenter * silent! lcd %:p:h
 
 
 " ===
