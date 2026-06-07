@@ -47,20 +47,16 @@ TERM = "xterm-256color"
 size = 16
 
 [font.bold]
-family = "FiraCode Nerd Font"
-style = "Bold"
+family = "JetbrainsMono Nerd Font"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font"
-style = "Bold Italic"
+family = "JetbrainsMono Nerd Font"
 
 [font.italic]
-family = "FiraCode Nerd Font"
-style = "Italic"
+family = "JetbrainsMono Nerd Font"
 
 [font.normal]
-family = "FiraCode Nerd Font"
-style = "Regular"
+family = "JetbrainsMono Nerd Font"
 
 
 [window]
