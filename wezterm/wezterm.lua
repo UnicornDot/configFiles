@@ -28,18 +28,18 @@ local color_scheme = "tokyonight-storm"
 return {
 	font = wezterm.font_with_fallback({
 		{
-			family = "Maple Mono NF",
+			family = "Cascadia Code Italic",
 			harfbuzz_features = {
 				"cv01=1",
 				"cv02=1",
-				"ss01=1",
+				-- "ss01=1",
 				"ss02=1",
 				"ss03=1",
 				"ss04=1",
 				"ss05=1",
 			},
 		},
-		"Maple Mono SC NF", -- for Chinese
+		"Cascadia Code NF Italic", -- for Chinese
 		"JetBrainsMono Nerd Font",
 		"Noto Color Emoji",
 		"JetBrains Mono",
@@ -51,19 +51,18 @@ return {
 		"feather",
 	}),
 	font_size = 14,
-
 	color_scheme = color_scheme,
 
 	-- default_prog = { "/bin/bash", "-l", "-c", "tmux attach || tmux" },
 	default_prog = { "powershell", "-NoLogo" },
 
 	window_padding = {
-		left = 0,
-		right = 0,
-		top = 0,
+		left = 4,
+		right = 4,
+		top = 12,
 		bottom = 0,
 	},
-	window_background_opacity = 0.90,
+	window_background_opacity = 0.98,
 	window_decorations = "RESIZE",
 	window_close_confirmation = "NeverPrompt",
 
@@ -115,5 +114,25 @@ return {
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivateTabRelative = -1 }),
 		},
+		{
+		  key = "o",
+		  mods = "SHIFT|ALT",
+		  action = wezterm.action.SpawnTab "CurrentPaneDomain"
+		},
+		{
+		  key = "+",
+		  mods = "SHIFT|ALT",
+		  action = wezterm.action.SplitHorizontal {domain = "DefaultDomain"}
+		},
+		{
+		  key = "_",
+		  mods = "SHIFT|ALT",
+		  action = wezterm.action.SplitVertical { domain = "DefaultDomain"}
+		},
+		{
+		  key = "q",
+		  mods = "SHIFT|ALT",
+		  action = wezterm.action.CloseCurrentPane { confirm = true },
+		}
 	},
 }
