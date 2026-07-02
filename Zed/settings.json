@@ -12,7 +12,7 @@
     "dock": "right",
   },
   "git_panel": {
-    "dock": "right",
+    "dock": "left"
   },
   "edit_predictions": {
     "provider": "zed",
