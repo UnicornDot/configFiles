@@ -28,7 +28,8 @@ local color_scheme = "tokyonight-storm"
 return {
 	font = wezterm.font_with_fallback({
 		{
-			family = "Cascadia Code Italic",
+		  family = "Cascadia Code",
+		  style = "Italic",
 			harfbuzz_features = {
 				"cv01=1",
 				"cv02=1",
@@ -37,12 +38,14 @@ return {
 				"ss03=1",
 				"ss04=1",
 				"ss05=1",
+				"liga=1"
 			},
 		},
-		"Cascadia Code NF Italic", -- for Chinese
+		"PingFang UI SC",
+		"JetBrains Mono",
+		"Maple Mono SC NF", -- for Chinese
 		"JetBrainsMono Nerd Font",
 		"Noto Color Emoji",
-		"JetBrains Mono",
 
 		-- icons
 		"Font Awesome 6 Pro Solid",
@@ -50,11 +53,12 @@ return {
 		"MesloLGSDZ Nerd Font Mono",
 		"feather",
 	}),
-	font_size = 14,
+	font_size = 16,
+
 	color_scheme = color_scheme,
 
-	-- default_prog = { "/bin/bash", "-l", "-c", "tmux attach || tmux" },
-	default_prog = { "powershell", "-NoLogo" },
+	default_prog = { "/bin/zsh", "-l", "-c", "tmux attach || tmux" },
+	-- default_prog = { "powershell", "-NoLogo" },
 
 	window_padding = {
 		left = 4,
@@ -101,38 +105,10 @@ return {
 
 	disable_default_key_bindings = true,
 	keys = {
-		{
-			key = "Enter",
-			mods = "SHIFT",
-			action = wezterm.action.SendString("\x1b[13;2u"),
-		},
+		{ key = "Enter", mods = "SHIFT", action = wezterm.action.SendString("\x1b[13;2u"), },
 		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action.CopyTo("Clipboard") },
 		{ key = "v", mods = "CTRL|SHIFT", action = wezterm.action.PasteFrom("Clipboard") },
 		{ key = "Tab", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = 1 }) },
-		{
-			key = "Tab",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action({ ActivateTabRelative = -1 }),
-		},
-		{
-		  key = "o",
-		  mods = "SHIFT|ALT",
-		  action = wezterm.action.SpawnTab "CurrentPaneDomain"
-		},
-		{
-		  key = "+",
-		  mods = "SHIFT|ALT",
-		  action = wezterm.action.SplitHorizontal {domain = "DefaultDomain"}
-		},
-		{
-		  key = "_",
-		  mods = "SHIFT|ALT",
-		  action = wezterm.action.SplitVertical { domain = "DefaultDomain"}
-		},
-		{
-		  key = "q",
-		  mods = "SHIFT|ALT",
-		  action = wezterm.action.CloseCurrentPane { confirm = true },
-		}
+		{ key = "Tab", mods = "CTRL|SHIFT", action = wezterm.action({ ActivateTabRelative = -1 }), },
 	},
 }

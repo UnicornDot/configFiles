@@ -54,7 +54,7 @@
   },
   "agent": {
     "sidebar_side": "right",
-    "dock": "left",
+    "dock": "right",
     "default_profile": "ask",
     "inline_assistant_model": {
       "provider": "zed.dev",
