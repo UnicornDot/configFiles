@@ -28,8 +28,9 @@ local color_scheme = "tokyonight-storm"
 return {
 	font = wezterm.font_with_fallback({
 		{
-		  family = "Cascadia Code",
-		  style = "Italic",
+			family = "Cascadia Code",
+			weight = "Bold",
+			style = "Italic",
 			harfbuzz_features = {
 				"cv01=1",
 				"cv02=1",
@@ -109,6 +110,11 @@ return {
 		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action.CopyTo("Clipboard") },
 		{ key = "v", mods = "CTRL|SHIFT", action = wezterm.action.PasteFrom("Clipboard") },
 		{ key = "Tab", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = 1 }) },
-		{ key = "Tab", mods = "CTRL|SHIFT", action = wezterm.action({ ActivateTabRelative = -1 }), },
+		{ key = "Tab", mods = "CTRL|SHIFT", action = wezterm.action({ ActivateTabRelative = -1 })},
+		{ key = "o", mods = "SHIFT|ALT", action = wezterm.action.SpawnTab "CurrentPaneDomain" },
+		{ key = "+", mods = "SHIFT|ALT", action = wezterm.action.SplitHorizontal {domain = "DefaultDomain"} },
+		{ key = "_", mods = "SHIFT|ALT", action = wezterm.action.SplitVertical { domain = "DefaultDomain"} },
+		{ key = "q", mods = "SHIFT|ALT", action = wezterm.action.CloseCurrentPane { confirm = true } },
+		{ key = "p", mods = "SHIFT|ALT", action = wezterm.action.ShowLauncher }
 	},
 }
