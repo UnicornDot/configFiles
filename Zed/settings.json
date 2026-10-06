@@ -7,12 +7,21 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "title_bar": {
+    "button_layout": "",
+    "show_branch_status_icon": true
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
   "proxy": "",
   "collaboration_panel": {
     "dock": "right",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "edit_predictions": {
     "provider": "zed",
