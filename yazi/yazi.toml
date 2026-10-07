@@ -10,7 +10,6 @@ show_hidden    = false
 show_symlink   = true
 scrolloff      = 5
 mouse_events   = ["click", "scroll"]
-title_format   = "Yazi: {cwd}"
 
 [preview]
 tab_size        = 2
@@ -24,29 +23,29 @@ ueberzug_offset = [0, 0, 0, 0]
 
 [opener]
 edit = [
-	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
-	{ run = 'code %*', orphan = true, desc = "code", for = "windows" },
-	{ run = 'code -w %*', block = true, desc = "code (block)", for = "windows" },
+	{ run = '${EDITOR:-vim} %s', desc = "$EDITOR", block = true, for = "unix" },
+	{ run = 'code %s', orphan = true, desc = "code", for = "windows" },
+	{ run = 'code -w %s', block = true, desc = "code (block)", for = "windows" },
 ]
 open = [
-	{ run = 'xdg-open "$1"', desc = "Open", for = "linux" },
-	{ run = 'open "$@"', desc = "Open", for = "macos" },
-	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
+	{ run = 'xdg-open %s1', desc = "Open", for = "linux" },
+	{ run = 'open %s', desc = "Open", for = "macos" },
+	{ run = 'start "" %s1', orphan = true, desc = "Open", for = "windows" },
 ]
 reveal = [
-	{ run = 'xdg-open "$(dirname "$1")"', desc = "Reveal", for = "linux" },
-	{ run = 'open -R "$1"', desc = "Reveal", for = "macos" },
-	{ run = 'explorer /select,"%1"', orphan = true, desc = "Reveal", for = "windows" },
-	{ run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
+	{ run = 'xdg-open %d1', desc = "Reveal", for = "linux" },
+	{ run = 'open -R %s1', desc = "Reveal", for = "macos" },
+	{ run = 'explorer /select,%s1', orphan = true, desc = "Reveal", for = "windows" },
+	{ run = '''exiftool %s1; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
 ]
 extract = [
-	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
-	{ run = 'ya pub extract --list %*', desc = "Extract here", for = "windows" },
+	{ run = 'ya pub extract --list %s', desc = "Extract here", for = "unix" },
+	{ run = 'ya pub extract --list %s', desc = "Extract here", for = "windows" },
 ]
 play = [
-	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
-	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
-	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
+	{ run = 'mpv --force-window %s', orphan = true, for = "unix" },
+	{ run = 'mpv --force-window %s', orphan = true, for = "windows" },
+	{ run = '''mediainfo %s1; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 
 [open]
@@ -72,17 +71,17 @@ rules = [
 ]
 
 [tasks]
-micro_workers    = 10
-macro_workers    = 25
+file_workers     = 10
+process_workers  = 25
 bizarre_retry    = 5
 image_alloc      = 536870912 # 512MB
 image_bound      = [0, 0]
 suppress_preload = false
 
 [plugin]
-prepned_fetchers = [
-	{ id = "git", url = "*", run = "git", prio = "normal" },
-	{ id = "git", url = "*/", run = "git", prio = "normal" },
+prepend_fetchers = [
+	{ url = "*", run = "git", group = "git", prio = "normal" },
+	{ url = "*/", run = "git", group = "git", prio = "normal" },
 ]
 
 
@@ -148,16 +147,6 @@ rename_title  = "Rename:"
 rename_origin = "hovered"
 rename_offset = [0, 1, 50, 3]
 
-# trash
-trash_title  = "Move {n} selected file{s} to trash? (y/N)"
-trash_origin = "top-center"
-trash_offset = [0, 2, 50, 3]
-
-# delete
-delete_title  = "Delete {n} selected file{s} permanently? (y/N)"
-delete_origin = "top-center"
-delete_offset = [0, 2, 50, 3]
-
 # filter
 filter_title  = "Filter:"
 filter_origin = "top-center"
@@ -177,6 +166,17 @@ search_offset = [0, 2, 50, 3]
 shell_title  = ["Shell:", "Shell (block):"]
 shell_origin = "top-center"
 shell_offset = [0, 2, 50, 3]
+
+[confirm]
+# trash
+trash_title  = "Move {n} selected file{s} to trash? (y/N)"
+trash_origin = "top-center"
+trash_offset = [0, 2, 50, 3]
+
+# delete
+delete_title  = "Delete {n} selected file{s} permanently? (y/N)"
+delete_origin = "top-center"
+delete_offset = [0, 2, 50, 3]
 
 # overwrite
 overwrite_title  = "Overwrite an existing file? (y/N)"
