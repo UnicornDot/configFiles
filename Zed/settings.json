@@ -7,14 +7,17 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-  "title_bar": {
-    "button_layout": "",
-    "show_branch_status_icon": true
-  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
-    }
+  },
+  "window_title_format": "${projectName}${separator}${fileName}",
+  "title_bar": {
+    "button_layout": "",
+    "show_branch_status_icon": true,
+    "show_onboarding_banner": true,
+    "show_user_menu": true,
+    "show_menus": false
   },
   "proxy": "",
   "collaboration_panel": {
